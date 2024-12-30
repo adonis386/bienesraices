@@ -1,0 +1,29 @@
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+}
+
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+}
+
+.boton-verde {
+    @include boton($verde, inline-block);
+}
+
+.boton-verde-block {
+    @include boton($verde, block);
+}
+
+.boton-rojo-block {
+    @include boton($rojo, block);
+}
+.boton-verde-block, .boton-rojo-block, .boton-amarillo-block {
+    display: inline-block;
+    width: 100%; /* Asegura que ambos botones ocupen todo el ancho del contenedor */
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
